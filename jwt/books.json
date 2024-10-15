@@ -1,0 +1,32 @@
+[
+  {
+    "book_title": "Frankenstein; Or, The Modern Prometheus",
+    "image": "https://www.gutenberg.org/cache/epub/84/pg84.cover.medium.jpg",
+    "author": "Shelley, Mary Wollstonecraft",
+    "rating": 5
+  },
+  {
+    "book_title": "Romeo and Juliet",
+    "image": "https://www.gutenberg.org/cache/epub/1513/pg1513.cover.medium.jpg",
+    "author": "Shakespeare, William",
+    "rating": 4.5
+  },
+  {
+    "book_title": "Pride and Prejudice",
+    "image": "https://www.gutenberg.org/cache/epub/1342/pg1342.cover.medium.jpg",
+    "author": "Austen, Jane",
+    "rating": 5
+  },
+  {
+    "book_title": "Moby Dick; Or, The Whale",
+    "image": "https://www.gutenberg.org/cache/epub/2701/pg2701.cover.medium.jpg",
+    "author": "Melville, Herman",
+    "rating": 4.8
+  },
+  {
+    "book_title": "The Scarlet Letter",
+    "image": "https://www.gutenberg.org/cache/epub/25344/pg25344.cover.medium.jpg",
+    "author": "Hawthorne, Nathaniel",
+    "rating": 4.7
+  }
+]
