@@ -6,7 +6,7 @@ require("dotenv").config();
 const port = process.env.POST || 4321;
 
 // middle wear
-app.use();
+app.use(cors());
 app.use(express.json());
 
 
@@ -42,8 +42,9 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    const userCollection = client.db("tasteTrail").collection("user");
-    const reviewCollection = client.db("tasteTrail").collection("review");
+    const userCollection = client.db("bookReview").collection("users");
+    const reviewCollection = client.db("bookReview").collection("reviews");
+    const bookCollection = client.db("bookReview").collection("books");
 
     // middleware again
 
@@ -95,6 +96,12 @@ async function run() {
         updatedDoc,
         options
       );
+      res.send(result);
+    });
+
+    //book api
+    app.get("/book", async (req, res) => {
+      const result = await bookCollection.find().toArray();
       res.send(result);
     });
 
